@@ -1,6 +1,5 @@
-const mongoose = require('mongoose')
-const shortId = require('shortid')
-
+const mongoose = require('mongoose');
+//3 attributes for the application
 const shortUrlSchema = new mongoose.Schema({
   full: {
     type: String,
@@ -8,8 +7,7 @@ const shortUrlSchema = new mongoose.Schema({
   },
   short: {
     type: String,
-    required: true,
-    default: shortId.generate
+    required: true
   },
   clicks: {
     type: Number,
